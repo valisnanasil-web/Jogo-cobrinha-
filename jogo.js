@@ -6,6 +6,7 @@ function jogar(){
     cobra.mover();
     if (maca.teveColisao(cobra))
     {
+        trilha.tocar('cobraComeu')
         placar.pontuacao+=10;
         maca = new Maca();
     }
@@ -13,11 +14,13 @@ function jogar(){
     requestAnimationFrame(jogar);
     else
     {
+        trilha.tocar ('fimJogo')
         placar.nomeJogo = "FIM DE JOGO"
         placar.desenhar();
     }
 }
 let maca = new Maca();
+let trilha = new TrilhaSonora();
 jogar();
 
 document.addEventListener("keydown", (evento)=> {

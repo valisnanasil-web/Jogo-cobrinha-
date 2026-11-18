@@ -3,8 +3,8 @@ const placar =
 pontuacao:0,
 largura:800,
 altura:60,
-corFundo:"purple",
-corTexto:"#39FF14",
+corFundo:"#ecd5f0",
+corTexto:"#240229",
 nomeJogo:"THE LIFE SNAKE",
 desenhar()
     {

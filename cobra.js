@@ -1,6 +1,6 @@
 const cobra = 
 {
-    cor:"purple",
+    cor:"#493449",
     tamanho:12,
     direcao:"direita",
     x:0,
@@ -28,5 +28,9 @@ const cobra =
         this.vida--;
         this.x=400;
         this.y=260;
+        if(this.vida ==2 ) this.cor = "#9750ba";
+        if(this.vida ==1 ) this.cor = "#5f416e";
+   
     }
-}
+    }
+
